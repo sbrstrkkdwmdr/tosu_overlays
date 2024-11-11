@@ -1,0 +1,7 @@
+Usecase: ingame, obs-overlay
+Name: KeyOverlay
+Author: sbrstrkkdwmdr
+Version: 1.0
+CompatibleWith: tosu
+Resolution: 430x100
+authorLinks:  https://github.com/sbrstrkkdwmdr
