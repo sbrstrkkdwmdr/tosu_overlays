@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/odometr.css">
+    <script src="deps/odometr.js"></script>
+    <script src="deps/reconnecting-websocket.min.js"></script>
+    <script src="deps/Chart.min.js"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="target">
+        <div id="graphMain">
+            <canvas id="graph">
+            </canvas>
+            <div id="progress">
+                <div>
+                    <canvas id="graphOver">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+        <div id="hitTimerMain">
+            <div id="hit100Timer" class="hitTimer"> </div>
+            <div id="hit50Timer" class="hitTimer"> </div>
+            <div id="hit0Timer" class="hitTimer"> </div>
+            <div id="hitSbTimer" class="hitTimer"> </div>
+        </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+Usecase: ingame, obs-overlay
+Name: timeline
+Author: sbrstrkkdwmdr
+Version: 1.0
+CompatibleWith: tosu
+Resolution: 514x200
+authorLinks:  https://github.com/sbrstrkkdwmdr

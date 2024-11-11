@@ -1,0 +1,158 @@
+@font-face {
+    font-family: "VAG Rundschrift D";
+    src: url("../fonts/VAG-Rundschrift-D.ttf");
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#main {
+    font-size: 20px;
+    font-family: VAG Rundschrift D, Helvetica, sans-serif;
+    font-weight: normal;
+    color: white;
+    height: 200px;
+    width: 550px;
+    position: relative;
+}
+
+.odometer.odometer-auto-theme {
+    font-size: 24px !important;
+    font-family: "VAG Rundschrift D", Helvetica, sans-serif !important;
+    font-weight: normal !important;
+}
+
+#target {
+    position: relative;
+    height: 200px;
+    width: 550px;
+}
+
+#graphMain {
+    position: absolute;
+    z-index: 5;
+    top: 5px;
+    left: 15px;
+    max-height: 150px;
+    width: 500px;
+    transition: ease-in-out 500ms;
+}
+
+#graph {
+    /* color: rgba(255, 255, 255, 0.2); */
+    position: absolute;
+    /* top: 57px; */
+    height: 150px !important;
+    width: 500px;
+}
+
+#graphOver {
+    /* color: rgba(255, 255, 255, 0.5); */
+    position: absolute;
+    /* top: 75px; */
+    height: 150px !important;
+    width: 500px;
+    /* overflow: hidden;
+    transition: ease 600ms; */
+}
+
+#progress {
+    /* color: rgba(255, 255, 255, 0.5); */
+    position: absolute;
+    /* top: 75px; */
+    height: 150px !important;
+    width: 500px;
+    overflow: hidden;
+    transition: ease 600ms;
+}
+
+.shadowTxt {
+    filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.7));
+    -webkit-filter: drop-shadow(-5px 5px 5px rgba(0, 0, 0, 0.7));
+    -moz-filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.7));
+    -ms-filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.7));
+    -o-filter: drop-shadow(-5px 5px 10px rgba(0, 0, 0, 0.7));
+}
+.over {
+    transform: translate(360px);
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate(0px);
+    }
+
+    10% {
+        transform: translate(0px);
+    }
+
+    90% {
+        transform: translate(calc(-100% + 300px));
+    }
+
+    100% {
+        transform: translate(calc(-100% + 300px));
+    }
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+}
+
+#hitTimerMain {
+    left: 15px;
+    top: 155px;
+    position: absolute;
+    width: 500px;
+    transition: ease-in-out 500ms;
+}
+
+.hitTimer{
+    width: 500px;
+    height: 10px; 
+}
+
+#hit100Timer {
+    background-color: #35692F80;
+}
+
+#hit50Timer {
+    background-color: #8A662E80;
+}
+
+#hit0Timer {
+    background-color: #8A2E2E80;
+}
+
+#hitSbTimer {
+    background-color: #4C318A80;
+}
+
+.hitObject {
+    width: 5px;
+    height: 10px;
+    z-index: 3;
+    position: absolute;
+    mix-blend-mode: screen;
+    /* float: right; */
+}
+
+.hit100Object {
+    background-color: #75C46B;
+}
+.hit50Object {
+    background-color: #FFC772;
+}
+.hit0Object {
+    background-color: #FF7272;
+}
+.hitSbObject {
+    background-color: #A077FF;
+}
